@@ -1,0 +1,25 @@
+t = int(input())
+for i in range(t):
+    s = input()
+    fs , sst = '', ''
+    
+    if (len(s)% 2 ==0):
+        fs = s[:len(s)//2]
+        sst = s[len(s)//2:]
+    else:
+        fs = s[:len(s)//2]
+        sst = s[len(s)//2+1:]
+    
+    l1 = list(fs)
+    l2 = list(sst)
+    
+    l1.sort()
+    l2.sort()
+    
+    fs = str(l1)
+    sst = str(l2)
+    
+    if (fs == sst):
+        print("YES")
+    else:
+        print("NO")
