@@ -1,0 +1,12 @@
+# Task:  Create a Temperature Converter component, as shown below
+
+# Solution: 
+
+celcius = int(input("Enter value in Celcius: "))
+farhenite = int(input("Enter value in Farhenite: "))
+
+conv_f = (celius)*(9/5) + (32)
+conv_c =  (farhenite-32) * (5/9)
+
+print("Celcuius to Farhernite is: ",conv_f)
+print("Farhenite to Celcius is: ",conv_c)
